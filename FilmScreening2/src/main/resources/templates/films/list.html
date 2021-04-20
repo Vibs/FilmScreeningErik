@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Films Spring Framework Guru</title>
+</head>
+<body>
+<h1>Film List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Length</th>
+    </tr>
+    <tr th:each="film : ${films}">
+        <td th:text="${film.filmId}">aaxx</td>
+        <td th:text="${film.filmName}">bbyy</td>
+        <td th:text="${film.length}"></td>
+    </tr>
+</table>
+</body>
+</html>
+
